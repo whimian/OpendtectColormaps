@@ -7,9 +7,11 @@ from __future__ import (absolute_import, division, print_function,
 
 __author__ = "yuhao"
 
+from os import path
+
 from matplotlib.colors import LinearSegmentedColormap, Normalize
 
-DEFAULT_FILE_PATH = './ColTabs'
+DEFAULT_FILE_PATH = path.join(path.dirname(__file__), 'ColTabs')
 
 class OpendtectColormaps(object):
     def __init__(self, filename=DEFAULT_FILE_PATH):
